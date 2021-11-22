@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon version="0.2">
+    <title xml:lang="ko">회원정보 사용자정의 읽기전용 지정 애드온</title>
+    <description xml:lang="ko">회원정보의 사용자정의 항목중 일부를 읽기전용으로 지정합니다.</description>
+    <version>1.0A</version>
+    <date>2020-11-03</date>
+    <author email_address="admin@webstack.me" link="https://webstack.me/">
+        <name xml:lang="ko">웹스택</name>
+    </author>
+    <extra_vars>
+		<var name="use_hide" type="select">
+			<title xml:lang="ko">입력란 숨기기</title>
+			<description xml:lang="ko">회원가입/회원수정 페이지에서 읽기전용 항목의 입력란을 숨깁니다.</description>
+
+			<options value="Y">
+				<title>숨김</title>
+			</options>
+			<options value="N">
+				<title>숨기지 않음</title>
+			</options>
+		</var>
+
+		<var name="closest_hider" type="text">
+			<title xml:lang="ko">숨김처리 요소 선택자</title>
+			<description xml:lang="ko">읽기전용 항목의 제목 및 입력란을 포괄하는 요소의 선택자를 입력해 주세요. 대부분의 스킨에서는 li 또는 tr 으로 처리할 수 있습니다.</description>
+		</var>
+    </extra_vars>
+</addon>
